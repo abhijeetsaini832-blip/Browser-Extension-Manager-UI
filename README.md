@@ -2,7 +2,7 @@
 
 A responsive browser extensions manager built with HTML, CSS, Bootstrap and vanilla JavaScript. It is based on the Frontend Mentor "Browser Extensions Manager UI" challenge.
 
-🔗 **Live demo:** _add your GitHub Pages link here_
+🔗 **Live demo:** https://abhijeetsaini832-blip.github.io/Browser-Extension-Manager-UI/
 
 ## ✨ Features
 
@@ -88,7 +88,3 @@ No build step or installation is needed. ✅
 - **LinkedIn:**
   [abhijeet-saini-b0aaa3363](https://linkedin.com/in/abhijeet-saini-b0aaa3363)
 - **Email:** abhijeetsaini832@gmail.com
-
-## 🙏 Credits
-
-Design and challenge by [Frontend Mentor](https://www.frontendmentor.io).
