@@ -1,0 +1,243 @@
+body.dark{
+    background:linear-gradient(180deg, #040918 0%,#091540 90%);
+    background-attachment:fixed;
+    color:#eff4fa;
+}
+
+body.dark .extensions{
+    background-color:#1e293b;
+    box-shadow:none;
+}
+
+body.dark .moon{
+    background-color:#2f3b5c;
+}
+
+body.dark .left img{   
+    filter: brightness(0) invert(1);
+}
+
+body.dark .card{
+    background-color:rgba(47,54,77,0.8);
+    color:#f1f5f9;
+    border:1px solid #4a5578;
+}
+
+body.dark .card-title{
+    color:#f1f5f9;
+}
+
+body.dark .card-text{
+    color:#c7c7c7;
+}
+
+body.dark .btn-outline-secondary{
+    color:#f1f5f9;
+    border-color:#5b6485;
+    background-color:transparent;
+}
+
+body.dark .filter-btn{
+    background-color:#2f3b5c;
+    color:#f1f5f9;
+    border-color:#2f3b5c;
+}
+
+body.dark .filter-btn.active{
+    background-color:#f2705e;
+    color:#091540;
+    border-color:#f2705e;
+}
+
+body.dark .form-check-input:checked{
+    background-color:#f2705a;
+    border-color:#f2705e;
+}
+
+body.dark .form-check-input:not(:checked){
+    background-color:#6b7280;
+    border-color:#6b7280;
+}
+
+body{
+    padding:40px;
+    background-color:rgb(224, 236, 246);
+}
+
+.full{
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.extensions{
+    background-color:white;
+    width:97%;
+    margin:0 auto 40px auto;
+    padding:5px 15px;
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.moon{
+    background-color:rgb(239, 233, 233);
+    display:inline-flex; 
+    align-items:center;
+    justify-content:center;
+    padding:8px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:background-color 1s ease 0s;
+}
+
+.moon img{
+    width:24px;
+    height:24px;
+}
+
+ .card{
+    margin:4px;
+    padding:11px;
+    border-radius:15px;
+    width:328px;
+    max-width:100%;
+}
+
+.allCards{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+
+.moon:hover{
+    background-color:brown;
+    transform:scale(1.1); 
+}
+
+.ext-icon{
+    object-fit:contain;
+    flex-shrink:0;
+    height:50px;
+    width:50px;
+    margin-left:2px;
+}
+
+.card-title{
+    font-size:17px;
+    margin-bottom:4px;
+}
+
+.card-text{
+    font-size:14px;
+    color:rgb(100, 100, 100);
+    line-height:1.4;
+    margin-bottom:0;
+}
+
+button:hover{
+    transition:all 0.3s ease 0s;
+    transform:scale(1.1);
+    background-color:#c7312b !important;
+}
+
+.form-check-input:checked{
+    background-color:#c7312b;
+    border-color:#c7312b;
+}
+
+.form-check-input:focus{
+    border-color:#c7312b;
+    box-shadow:0 0 0 0.1rem rgba(199, 49, 43, 0.25);
+}
+
+.list-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:94%;
+    margin:0 auto 20px auto;
+}
+
+.filters{
+    display:flex;
+    gap:10px;
+}
+
+.filter-btn{
+    background-color:white;
+    color:#111;
+    border:1px solid #ddd;
+    padding:6px 16px;
+    border-radius:20px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.filter-btn:hover{
+    background-color:#f0f0f0;
+}
+
+.filter-btn.active{
+    background-color:#c7312b;
+    color:white;
+    border-color:#c7312b;
+}
+
+.a{
+    background-color:rgb(136, 121, 246);
+    border-radius:10px;
+}
+
+.b{
+    background-color:rgb(246, 122, 122);
+    border-radius:10px;
+}
+
+.c{
+    background-color:rgb(136, 228, 243);
+    border-radius:10px;
+    
+}
+
+.d{
+    background-color:rgb(210, 239, 135);
+    border-radius:10px;
+}
+
+@media(max-width:767px){
+    .list-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+    .filters{
+        flex-wrap:wrap;
+    }
+    .card{
+        width:100%;
+    }
+    .extensions{
+        width:92%;
+    }
+}
+
+body.dark .moon img {
+    filter:invert(1);
+}
+
+.filter-btn:hover{
+    background-color: #f0f0f0;
+}
+
+.filter-btn:not(.actve):hover{
+    background-color:#f0f0f0;
+}
+
+body.dark .filter-btn:not(.active):hover {
+    background-color:#3d4b70;
+}
+
+

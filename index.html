@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser extension manager UI</title>
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" 
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+    >
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="full">
+
+    <div class="extensions"> 
+      <div class="left">
+        <img src="logo.svg" alt="Extensions" height="40px" width="150px">
+        </div>
+         <span class="moon">
+          <img src="icon-moon.svg" alt="moon" height="15px" width="15px">
+        </span>
+    </div>
+
+    <div class="list-header">
+    <h2><b>Extensions List</b></h2>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="inactive">Inactive</button>
+    </div>
+    </div>
+   
+    <!-- Cards -->
+     <div class="allCards">
+<!-- Card - 1 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-devlens.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>DevLens</b></h5>
+    <p class="card-text">Quickly inspect page layouts and visualize element boundaries.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 2 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-style-spy.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>StyleSpy</b></h5>
+    <p class="card-text">Instantly analyze and copy CSS from any webpage element.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 3 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-speed-boost.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>SpeedBoost</b></h5>
+    <p class="card-text">Optimizes browser resource usage to accelerate page loading.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 4 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-json-wizard.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>JSONWizard</b></h5>
+    <p class="card-text">Formats, validates, and prettifies JSON responses in-browser.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 5 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-tab-master-pro.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>TabMaster Pro</b></h5>
+    <p class="card-text">Organizes browser tabs into groups and sessions.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 6 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-viewport-buddy.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>ViewportBuddy</b></h5>
+    <p class="card-text">Simulates various screen resolutions directly within the browser.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 7 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-markup-notes.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>Markup Notes</b></h5>
+    <p class="card-text">Enables annotation and notes directly onto webpages for collab debugging.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 8 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-grid-guides.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>GridGuides</b></h5>
+    <p class="card-text">Overlay customizable grids and alignment guides on any webpage.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 9 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-palette-picker.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>Palette Picker</b></h5>
+    <p class="card-text">Instantly extracts color palettes from any webpage.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 10 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-link-checker.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>LinkChecker</b></h5>
+    <p class="card-text">Scans and highlights broken links on any page.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 11 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-dom-snapshot.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>DOM Snapshot</b></h5>
+    <p class="card-text">Capture and export DOM structures quickly.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 12 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="logo-console-plus.svg" class="ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>ConsolePlus</b></h5>
+    <p class="card-text">Enhanced developer console with advanced filtering and logging.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 13 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="cookie.svg" class="a ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>CookieMaster</b></h5>
+    <p class="card-text">View,edit,and delete cookies of any website easily.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 14 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="fonts.svg" class="b ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>FontFinder</b></h5>
+    <p class="card-text">Identify fonts, sies, and styles used on any webpage.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 15 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="graph-up.svg" class="c ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>SEOScan</b></h5>
+    <p class="card-text">Analyzes page titles, meta tags, and headings for SEO issues.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+<!-- Card - 16 -->
+  <div class="card">    
+      <div class="d-flex gap-3">
+      <img src="camera-fill.svg" class="d ext-icon" alt="devlens">      
+  <div>
+    <h5 class="card-title "><b>ScreenSnap</b></h5>
+    <p class="card-text">Captures full-page screenshots and saves them in one click.</p>
+    </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-between align-items-center" >
+      <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" checked>
+      </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+crossorigin="anonymous">
+</script>
+<script src="app.js"></script>
+</body>
+</html>
