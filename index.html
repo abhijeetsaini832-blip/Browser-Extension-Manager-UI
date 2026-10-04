@@ -28,18 +28,18 @@
       <div class="left">
         <img src="logo.svg" alt="Extensions" height="40px" width="150px">
         </div>
-         <span class="moon">
+         <button class="moon" type="button" aria-label="Toggle dark mode">
           <img src="icon-moon.svg" alt="moon" height="15px" width="15px">
-        </span>
+        </button>
     </div>
 
     <div class="list-header">
     <h2><b>Extensions List</b></h2>
 
     <div class="filters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="active">Active</button>
-      <button class="filter-btn" data-filter="inactive">Inactive</button>
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="active" area-pressed="false">Active</button>
+      <button class="filter-btn" data-filter="inactive" aria-pressed="false">Inactive</button>
     </div>
     </div>
    
@@ -58,7 +58,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle DevLens" checked>
       </div>
     </div>
 </div>
@@ -76,7 +76,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle StyleSpy" checked>
       </div>
     </div>
 </div>
@@ -94,7 +94,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle SpeedBoost" checked>
       </div>
     </div>
 </div>
@@ -112,7 +112,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle JSONWizard" checked>
       </div>
     </div>
 </div>
@@ -130,7 +130,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle TabMaster Pro" checked>
       </div>
     </div>
 </div>
@@ -148,7 +148,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle ViewportBuddy" checked>
       </div>
     </div>
 </div>
@@ -166,7 +166,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle Markup Notes" checked>
       </div>
     </div>
 </div>
@@ -184,7 +184,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle GridGuides" checked>
       </div>
     </div>
 </div>
@@ -202,7 +202,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle Palette Picker" checked>
       </div>
     </div>
 </div>
@@ -220,7 +220,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle LinkChecker" checked>
       </div>
     </div>
 </div>
@@ -238,7 +238,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle DOM Snapshot" checked>
       </div>
     </div>
 </div>
@@ -256,7 +256,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle ConsolePlus" checked>
       </div>
     </div>
 </div>
@@ -274,7 +274,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle CookieMaster" checked>
       </div>
     </div>
 </div>
@@ -292,7 +292,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle FontFinder" checked>
       </div>
     </div>
 </div>
@@ -310,7 +310,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle SEOScan" checked>
       </div>
     </div>
 </div>
@@ -328,7 +328,7 @@
     <div class="d-flex justify-content-between align-items-center" >
       <button class="btn btn-outline-secondary rounded-pill remove-btn"><b>Remove</b></button>
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" checked>
+        <input class="form-check-input" type="checkbox" role="switch" aria-label="Toggle ScreenSnap" checked>
       </div>
     </div>
 </div>
