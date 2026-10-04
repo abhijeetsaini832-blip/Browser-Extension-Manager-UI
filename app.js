@@ -35,8 +35,12 @@ filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
         currentFilter = btn.dataset.filter;
 
-        filterBtns.forEach((b) => b.classList.remove("active"));
-        btn.classList.add("active");
+       filterBtns.forEach((b) => {
+  b.classList.remove("active");
+  b.setAttribute("aria-pressed", "false");
+});
+btn.classList.add("active");
+btn.setAttribute("aria-pressed", "true");
 
         showCards();
     });
